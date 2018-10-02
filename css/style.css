@@ -107,6 +107,28 @@ Navigation bar
 .mart20{
 	margin-top: 20px;
 }
+/* Style all font awesome icons */
+.fab {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fas {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fab:hover {
+    opacity: 0.7;
+}
+
+
 /***********************************
 Banner
 ************************************/
@@ -388,32 +410,77 @@ Work Shop
 /***********************************
 Mentor Team
 ************************************/
-.pm-staff-profile-image{
-  width: 150px;
-  height: 150px;
-  background-color: #C6C6C6;
-  border-radius: 50%;
-  display: inline-block;
+/* ===== Begin team ===== */
+.team-item {
+	height: 120px;
 }
-.pm-staff-profile-details {
-    padding: 20px 20px;
+.team-item .team-triangle {
+	width: 120px;
+	height: 120px;
+	background: transparent;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	box-shadow: 0 0 0 6px #FFFFFF, 0 0 0 7px #dadbdb;
+	overflow: hidden;
 }
-.pm-staff-profile-name {
-    font-size: 24px;
-    text-transform: capitalize;
-    color: #2b5d83;
+.team-item img {
+    max-width: 100%;
 }
-.pm-staff-profile-title {
-    text-transform: capitalize;
-    color: #4b4b4b;
-    font-weight: 500;
-    padding: 12px 0px;
+.team-items {
+	margin-bottom: 50px;
+	padding-top: 10px;
+	margin-top: 0;
 }
-.pm-staff-profile-bio {
-  text-transform: capitalize;
-  color: #4b4b4b;
-  font-weight: 100;
+.team-triangle .content {
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: -35px;
+	position: absolute;
+	left: -37px;
+	width: 190px;
+	height: 190px;
 }
+.team-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba( 103, 109, 117, 0.9);
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-in; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.4s ease-in;
+}
+.team-item .team-triangle:hover .team-hover {
+	opacity: 1;
+}
+.team-hover i {
+    color: rgba(255, 255, 255,.75);
+    font-size: 28px;
+    margin-top: 57px;
+    position: relative;
+}
+.team-hover p {
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.team-items .col-md-2:nth-child(7n+5) {
+	clear: left;
+	margin-left: 24.9999999%;
+}
+.team-items .col-md-2:nth-child(7n+1) {
+	clear: left;
+	margin-left: 16.6666666%;
+}
+/* ===== End team ===== */
+
 /***********************************
 Testimonial
 ************************************/
@@ -552,8 +619,8 @@ Footer
 ************************************/
 .footer {
     text-align: center;
-    padding: 60px 0 20px;
-    background: #111;
+    padding: 10px 0 20px;
+    background: #000;
     color: #ccc;
 }
 .footer a {
@@ -561,7 +628,7 @@ Footer
 }
 
 .footer h3{
-	font-weight: 300;
+	font-weight: 100;
 	letter-spacing: 0.05em;
 	margin: 0 0 40px;
 	font-size: 24px;
@@ -573,7 +640,7 @@ Footer
     padding-left: 30px;
     color: #e5e6e7;
     margin-bottom: 0;
-    height: 48px;
+    height: 40px;
 }
 .footer .mc-trial {
     margin: 20px 0;
@@ -614,7 +681,7 @@ Footer
 }
 .mem-info{
     padding: 45px 10px 0px;
-    background-color: #eee;
+    background-color: #000;
 }
 .mem-info h4 {
     font-size: 18px;
@@ -805,3 +872,23 @@ i.member-icon {
 .fa-envelope{
     color: #681323
 }
+
+/* ===== Begin partners ===== */
+#patrocinadores-section {
+	padding: 20px;
+}
+.patrocinadores {
+	background-color: #252320;
+}
+
+.patrocinadores img {
+	max-width: 100%;
+	padding: 0 25px;
+}
+.patrocinadores-center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/* ===== End partners ===== */
+
